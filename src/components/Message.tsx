@@ -1,9 +1,13 @@
-import styles from "./Message.module.css";
+import styles from './Message.module.css';
 
-function Message({ message }) {
+interface MessageProps {
+  message: string;
+}
+
+function Message({ message }: MessageProps) {
   return (
     <p className={styles.message}>
-      <span role="img">👋</span> {message}
+      <span role='img'>👋</span> {message}
     </p>
   );
 }
