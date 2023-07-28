@@ -1,6 +1,6 @@
 type Position = {
   lat: number;
-  long: number;
+  lng: number;
 };
 
 export default interface ICity {
