@@ -12,7 +12,6 @@ import CityList from './components/CityList';
 import CountryList from './components/CountryList';
 import City from './components/City';
 
-import ICity from './interfaces/city.interface';
 import Form from './components/Form';
 
 export default function App() {

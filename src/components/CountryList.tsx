@@ -1,17 +1,13 @@
 import styles from './CountryList.module.css';
 import Spinner from './Spinner';
 
-import ICity from '../interfaces/city.interface';
 import ICountry from '../interfaces/country.interface';
 import Message from './Message';
 import CountryItem from './CountryItem';
+import { useCities } from '../contexts/CitiesContexts';
 
-interface CityListProps {
-  cities: ICity[];
-  isLoading: boolean;
-}
-
-export default function CountryList({ cities, isLoading }: CityListProps) {
+export default function CountryList() {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
