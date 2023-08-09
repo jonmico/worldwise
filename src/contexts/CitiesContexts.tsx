@@ -8,6 +8,7 @@ interface ICitiesContext {
   isLoading: boolean;
   currentCity: ICity;
   getCity: (id: string) => void;
+  createCity: (newCity: ICity) => void;
 }
 
 const CitiesContext = createContext<ICitiesContext | null>(null);
@@ -50,6 +51,27 @@ function CitiesProvider({ children }: CitiesProviderProps) {
     }
   }
 
+  async function createCity(newCity: ICity) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/cities`, {
+        method: 'POST',
+        body: JSON.stringify(newCity),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const data = await res.json();
+      setCities((currentCities) => [...currentCities, data]);
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -57,6 +79,7 @@ function CitiesProvider({ children }: CitiesProviderProps) {
         isLoading,
         currentCity,
         getCity,
+        createCity,
       }}
     >
       {children}

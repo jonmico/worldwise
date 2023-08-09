@@ -35,6 +35,78 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Urciers",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-09T15:55:34.586Z",
+      "notes": "",
+      "position": {
+        "lat": "46.51351558059737",
+        "lng": "2.1752929687500004"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Asahreppur",
+      "country": "Iceland",
+      "emoji": "🇮🇸",
+      "date": "2023-08-09T15:57:53.639Z",
+      "notes": "",
+      "position": {
+        "lat": "64.4348920430406",
+        "lng": "-18.720703125000004"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Karlskoga",
+      "country": "Sweden",
+      "emoji": "🇸🇪",
+      "date": "2023-08-09T15:58:11.740Z",
+      "notes": "",
+      "position": {
+        "lat": "59.33318942659219",
+        "lng": "14.633789062500002"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Abrantes",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2023-08-09T16:02:07.639Z",
+      "notes": "",
+      "position": {
+        "lat": "39.62261494094297",
+        "lng": "-8.195800781250002"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Foggaret Ezzaou",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-08-09T16:03:58.094Z",
+      "notes": "",
+      "position": {
+        "lat": "27.877928333679495",
+        "lng": "3.0322265625000004"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Tchirozerine",
+      "country": "Niger (the)",
+      "emoji": "🇳🇪",
+      "date": "2023-08-09T16:04:33.635Z",
+      "notes": "",
+      "position": {
+        "lat": "17.476432197195518",
+        "lng": "9.404296875000002"
+      },
+      "id": 98443203
     }
   ]
 }

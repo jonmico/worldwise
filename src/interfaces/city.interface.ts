@@ -1,14 +1,14 @@
 type Position = {
-  lat: number;
-  lng: number;
+  lat: string | null;
+  lng: string | null;
 };
 
 export default interface ICity {
   cityName: string;
   country: string;
   emoji: string;
-  date: string;
+  date: Date;
   notes: string;
   position: Position;
-  id: number;
+  id?: number;
 }
