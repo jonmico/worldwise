@@ -10,5 +10,5 @@ export default interface ICity {
   date: Date;
   notes: string;
   position: Position;
-  id?: number;
+  id?: string;
 }
