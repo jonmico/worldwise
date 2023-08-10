@@ -25,18 +25,6 @@
       "id": 17806751
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
-    },
-    {
       "cityName": "Urciers",
       "country": "France",
       "emoji": "🇫🇷",
@@ -61,28 +49,28 @@
       "id": 98443200
     },
     {
-      "cityName": "Abrantes",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2023-08-09T16:02:07.639Z",
-      "notes": "",
+      "cityName": "Toronto",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "date": "2023-08-10T03:25:51.502Z",
+      "notes": "Met with my WoW buddies.",
       "position": {
-        "lat": "39.62261494094297",
-        "lng": "-8.195800781250002"
+        "lat": "43.65396273281939",
+        "lng": "-79.37759399414062"
       },
-      "id": 98443201
+      "id": 98443204
     },
     {
-      "cityName": "Tchirozerine",
-      "country": "Niger (the)",
-      "emoji": "🇳🇪",
-      "date": "2023-08-09T16:04:33.635Z",
+      "cityName": "Vang",
+      "country": "Norway",
+      "emoji": "🇳🇴",
+      "date": "2023-08-10T03:49:51.810Z",
       "notes": "",
       "position": {
-        "lat": "17.476432197195518",
-        "lng": "9.404296875000002"
+        "lat": "61.11140578200479",
+        "lng": "8.547363281250002"
       },
-      "id": 98443203
+      "id": 98443205
     }
   ]
 }
