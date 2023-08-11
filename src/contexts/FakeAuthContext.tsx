@@ -1,6 +1,14 @@
 import { createContext, useContext, useReducer } from 'react';
+import IUser from '../interfaces/user.interface';
 
-const AuthContext = createContext();
+const AuthContext = createContext<IAuthContext | null>(null);
+
+interface IAuthContext {
+  user: IUser | null;
+  isAuthenticated: boolean;
+  login: (email: string, password: string) => void;
+  logout: () => void;
+}
 
 const initialState = {
   user: null,
@@ -52,9 +60,9 @@ function AuthProvider({ children }: AuthProviderProps) {
 }
 
 function useAuth() {
-  const context = useContext(AuthContext);
-  if (context === undefined)
-    throw new Error('AuthContext was used outside the AuthProvider');
+  const value = useContext(AuthContext);
+  if (!value) throw new Error('AuthContext was used outside the AuthProvider');
+  return value;
 }
 
 export { AuthProvider, useAuth };
