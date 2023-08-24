@@ -13,7 +13,7 @@ import { LatLngExpression } from 'leaflet';
 import { useCities } from '../contexts/CitiesContexts';
 import { useGeolocation } from '../hooks/useGeolocation';
 import Button from './Button';
-import { useUrlPosition } from '../hooks/urlUrlPosition';
+import { useUrlPosition } from '../hooks/useUrlPosition';
 
 export default function Map() {
   const { cities } = useCities();

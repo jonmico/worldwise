@@ -1,9 +1,9 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useReducer,
-  useState,
 } from 'react';
 import ICity from '../interfaces/city.interface';
 
@@ -99,17 +99,20 @@ function CitiesProvider({ children }: CitiesProviderProps) {
     fetchCities();
   }, []);
 
-  async function getCity(id: string) {
-    if (id === currentCity.id) return;
-    dispatch({ type: 'loading' });
-    try {
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
-      const data = await res.json();
-      dispatch({ type: 'city/loaded', payload: data });
-    } catch (err) {
-      dispatch({ type: 'rejected', payload: `${err}` });
-    }
-  }
+  const getCity = useCallback(
+    async function getCity(id: string) {
+      if (id === currentCity.id) return;
+      dispatch({ type: 'loading' });
+      try {
+        const res = await fetch(`${BASE_URL}/cities/${id}`);
+        const data = await res.json();
+        dispatch({ type: 'city/loaded', payload: data });
+      } catch (err) {
+        dispatch({ type: 'rejected', payload: `${err}` });
+      }
+    },
+    [currentCity.id]
+  );
 
   async function createCity(newCity: ICity) {
     dispatch({ type: 'loading' });
